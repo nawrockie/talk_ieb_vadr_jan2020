@@ -44,8 +44,11 @@ Eric Nawrocki \\
 \begin{tabular}{c}
 %Alejandro Sch\"{a}ffer's group \\
 %\\
+Computational Biology Branch \\
+%National Center for Biotechnology Information\\
 National Center for Biotechnology Information\\
-National Institutes of Health\\
+%National Institutes of Health\\
+National Library of Medicine \\
 \\
 \end{tabular}
 
@@ -58,7 +61,7 @@ National Institutes of Health\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
-\textbf{GenBank has a lot of sequence data}
+\Large{\textbf{GenBank has a lot of sequence data}}
 \end{center}
 
 \includegraphics[width=9in]{figs/genbank-2019-title}
@@ -81,12 +84,11 @@ National Institutes of Health\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
-\textbf{Sequence submissions are handled by expert NCBI indexers}
+\textbf{Submissions can be grouped and analyzed based on sequence type}
 \end{center}
 
 \small
 \begin{itemize}
-\item Indexers check submissions for quality
 \item Many submissions are of \emph{marker genes}, used to
   characterize environments (microbiome, soil), which are
   automatically analyzed by BLAST or specialized tools.
@@ -643,48 +645,6 @@ Measles morbillivirus     &       17,233 & \emph{Paramyxoviridae}  \\ % 11234
 \vfill
 \end{slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{comment}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{slide}
-\begin{center}
-\textbf{VADR results on all Norovirus and Dengue sequences}
-
-
-%\scriptsize
-%\begin{tabular}{l|r|r|r|r|r|r}
-%                        &         & min    & max      &         &         & \textcolor{red}{fraction} \\
-% dataset                & \# seqs & length & length   & \# pass & \# fail & \textcolor{red}{pass} \\ \hline
-%Norovirus complete (NC) & 1,384    & 7380  & 7839     & 1,157    & 227     & \textcolor{red}{0.836} \\
-%Dengue complete (DC)    & 4,580    & 10372 & 16254    & 4,171    & 409     & \textcolor{red}{0.911} \\
-%& & & & & \\
-%Norovirus partial (NP)  & 32,190   & 50    & 7376     & 29,488   & 2,702    & \textcolor{red}{0.916} \\
-%Dengue partial (DP)     & 20,973   & 50    & 10370    & 17,276   & 3,697    & \textcolor{red}{0.824} \\
-%\end{tabular}
-\normalsize
-\begin{tabular}{l|r|r|r|r}
-                        &         &         &         & \textcolor{red}{fraction} \\
- dataset                & \# seqs & \# pass & \# fail & \textcolor{red}{pass} \\ \hline
-Norovirus complete  & 1,384   & 1,157    & 227     & \textcolor{red}{0.836} \\
-Dengue complete     & 4,580   & 4,171    & 409     & \textcolor{red}{0.911} \\
-& & & & \\
-Norovirus partial   & 32,190  & 29,488   & 2,702    & \textcolor{red}{0.916} \\
-Dengue partial      & 20,973  & 17,276   & 3,697    & \textcolor{red}{0.824} \\
-\end{tabular}
-
-\end{center}
-\vfill
-\end{slide}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{slide}
-\begin{center}
-\includegraphics[width=10.5in]{figs/ss-alert-counts}
-\end{center}
-
-\vfill
-\end{slide}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\end{comment}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
 \includegraphics[width=10.5in]{figs/vadr-paper-title}
@@ -712,7 +672,7 @@ Dengue partial      & 20,973  & 17,276   & 3,697    & \textcolor{red}{0.824} \\
 \small
 \begin{itemize}
 \item nucleotide space, not protein space
-\item RefSeq or alignment must be 'representative'
+\item model (RefSeq) must be 'representative'
   \begin{itemize}
     \item divergent sequences, regions, introns, gene order are problematic
   \end{itemize}
@@ -730,7 +690,7 @@ Dengue partial      & 20,973  & 17,276   & 3,697    & \textcolor{red}{0.824} \\
 \small
 \begin{itemize}
 \item nucleotide space, not protein space
-\item RefSeq or alignment must be 'representative'
+\item model (RefSeq) must be 'representative'
   \begin{itemize}
     \item divergent sequences, regions, introns, gene order are problematic
   \end{itemize}
@@ -757,7 +717,7 @@ Dengue partial      & 20,973  & 17,276   & 3,697    & \textcolor{red}{0.824} \\
 \small
 \begin{itemize}
 \item nucleotide space, not protein space
-\item RefSeq or alignment must be 'representative'
+\item model (RefSeq) must be 'representative'
   \begin{itemize}
     \item divergent sequences, regions, introns, gene order are problematic
   \end{itemize}
@@ -794,7 +754,7 @@ Dengue partial      & 20,973  & 17,276   & 3,697    & \textcolor{red}{0.824} \\
 \small
 \begin{itemize}
 \item Any conserved sequence region $<$ 20Kb can be modeled 
-\item VADR models are more powerful if built from \textcolor{red}{\emph{alignments}} (profiles)
+\item VADR models are more powerful as profiles built from \textcolor{red}{\emph{alignments}} (RefAlign?)
 \item Currently in testing for COX1: 
   \begin{itemize}
   \item Started with 9000 vetted COX1 protein sequences (Susan Schafer)
@@ -862,6 +822,44 @@ Sophia Hu                        & & \\
 \end{slide}
 
 
+\begin{slide}
+\begin{center}
+\textbf{VADR results on all Norovirus and Dengue sequences}
+
+
+%\scriptsize
+%\begin{tabular}{l|r|r|r|r|r|r}
+%                        &         & min    & max      &         &         & \textcolor{red}{fraction} \\
+% dataset                & \# seqs & length & length   & \# pass & \# fail & \textcolor{red}{pass} \\ \hline
+%Norovirus complete (NC) & 1,384    & 7380  & 7839     & 1,157    & 227     & \textcolor{red}{0.836} \\
+%Dengue complete (DC)    & 4,580    & 10372 & 16254    & 4,171    & 409     & \textcolor{red}{0.911} \\
+%& & & & & \\
+%Norovirus partial (NP)  & 32,190   & 50    & 7376     & 29,488   & 2,702    & \textcolor{red}{0.916} \\
+%Dengue partial (DP)     & 20,973   & 50    & 10370    & 17,276   & 3,697    & \textcolor{red}{0.824} \\
+%\end{tabular}
+\normalsize
+\begin{tabular}{l|r|r|r|r}
+                        &         &         &         & \textcolor{red}{fraction} \\
+ dataset                & \# seqs & \# pass & \# fail & \textcolor{red}{pass} \\ \hline
+Norovirus complete  & 1,384   & 1,157    & 227     & \textcolor{red}{0.836} \\
+Dengue complete     & 4,580   & 4,171    & 409     & \textcolor{red}{0.911} \\
+& & & & \\
+Norovirus partial   & 32,190  & 29,488   & 2,702    & \textcolor{red}{0.916} \\
+Dengue partial      & 20,973  & 17,276   & 3,697    & \textcolor{red}{0.824} \\
+\end{tabular}
+
+\end{center}
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\begin{center}
+\includegraphics[width=10.5in]{figs/ss-alert-counts}
+\end{center}
+
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
