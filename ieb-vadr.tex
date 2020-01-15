@@ -166,7 +166,8 @@ National Institutes of Health\\
 \begin{slide}
 \begin{center}
 
-\textbf{Viruses with highest number of sequences in INSDC\footnote{as of October, 2019.}}
+%\textbf{Viruses with highest number of sequences in INSDC\footnote{as of October, 2019.}}
+\textbf{Viruses with highest number of sequences in GenBank\footnote{as of October, 2019.}}
 
 \tiny
 \begin{tabular}{lrl}
@@ -398,7 +399,8 @@ Measles morbillivirus     &       17,233 & \emph{Paramyxoviridae}  \\ % 11234
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
-\textbf{VADR build step (\texttt{v-build.pl}) builds a homology model
+%\textbf{VADR build step (\texttt{v-build.pl}) builds a homology model
+\textbf{VADR build step (\texttt{v-build}) builds a homology model
   \\ (covariance model (CM)) of a RefSeq and stores feature information}
 
 \includegraphics[width=6in]{figs/ss-001477-top}
@@ -409,7 +411,8 @@ Measles morbillivirus     &       17,233 & \emph{Paramyxoviridae}  \\ % 11234
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
-\textbf{VADR build step (\texttt{v-build.pl}) builds a homology model
+%\textbf{VADR build step (\texttt{v-build.pl}) builds a homology model
+\textbf{VADR build step (\texttt{v-build}) builds a homology model
   \\ (covariance model (CM)) of a RefSeq and stores feature information}
 
 \includegraphics[width=6in]{figs/ss-001477-mid}
@@ -420,7 +423,8 @@ Measles morbillivirus     &       17,233 & \emph{Paramyxoviridae}  \\ % 11234
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
-\textbf{VADR build step (\texttt{v-build.pl}) builds a homology model
+%\textbf{VADR build step (\texttt{v-build.pl}) builds a homology model
+\textbf{VADR build step (\texttt{v-build}) builds a homology model
   \\ (covariance model (CM)) of a RefSeq and stores feature information}
 
 \includegraphics[width=6in]{figs/ss-001477-bot}
@@ -431,7 +435,8 @@ Measles morbillivirus     &       17,233 & \emph{Paramyxoviridae}  \\ % 11234
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
-\textbf{VADR build step (\texttt{v-build.pl}) builds a homology model
+%\textbf{VADR build step (\texttt{v-build.pl}) builds a homology model
+\textbf{VADR build step (\texttt{v-build}) builds a homology model
   \\ (covariance model (CM)) of a RefSeq and stores feature information}
 
 \includegraphics[width=10.5in]{figs/dengue-features}
@@ -440,9 +445,12 @@ Measles morbillivirus     &       17,233 & \emph{Paramyxoviridae}  \\ % 11234
 \vfill
 \end{slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
-\textbf{VADR build step (\texttt{v-build.pl}) builds a homology model
+%\textbf{VADR build step (\texttt{v-build.pl}) builds a homology model
+\textbf{VADR build step (\texttt{v-build}) builds a homology model
   \\ (covariance model (CM)) of a RefSeq and stores feature information}
 
 \includegraphics[width=10.5in]{figs/ss-001477-minfo}
@@ -450,6 +458,8 @@ Measles morbillivirus     &       17,233 & \emph{Paramyxoviridae}  \\ % 11234
 \end{center}
 \vfill
 \end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{comment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
@@ -499,7 +509,8 @@ Measles morbillivirus     &       17,233 & \emph{Paramyxoviridae}  \\ % 11234
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
-\textbf{\texttt{v-annotate.pl} annotates each sequence using its
+%\textbf{\texttt{v-annotate.pl} annotates each sequence using its
+\textbf{\texttt{v-annotate} annotates each sequence using its
   best-matching model}
 
 \begin{itemize}
@@ -632,20 +643,32 @@ Measles morbillivirus     &       17,233 & \emph{Paramyxoviridae}  \\ % 11234
 \vfill
 \end{slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
 \textbf{VADR results on all Norovirus and Dengue sequences}
 
 
-\scriptsize
-\begin{tabular}{l|r|r|r|r|r|r}
-                        &         & min    & max      &         &         & \textcolor{red}{fraction} \\
- dataset                & \# seqs & length & length   & \# pass & \# fail & \textcolor{red}{pass} \\ \hline
-Norovirus complete (NC) & 1,384    & 7380  & 7839     & 1,157    & 227     & \textcolor{red}{0.836} \\
-Dengue complete (DC)    & 4,580    & 10372 & 16254    & 4,171    & 409     & \textcolor{red}{0.911} \\
-& & & & & \\
-Norovirus partial (NP)  & 32,190   & 50    & 7376     & 29,488   & 2,702    & \textcolor{red}{0.916} \\
-Dengue partial (DP)     & 20,973   & 50    & 10370    & 17,276   & 3,697    & \textcolor{red}{0.824} \\
+%\scriptsize
+%\begin{tabular}{l|r|r|r|r|r|r}
+%                        &         & min    & max      &         &         & \textcolor{red}{fraction} \\
+% dataset                & \# seqs & length & length   & \# pass & \# fail & \textcolor{red}{pass} \\ \hline
+%Norovirus complete (NC) & 1,384    & 7380  & 7839     & 1,157    & 227     & \textcolor{red}{0.836} \\
+%Dengue complete (DC)    & 4,580    & 10372 & 16254    & 4,171    & 409     & \textcolor{red}{0.911} \\
+%& & & & & \\
+%Norovirus partial (NP)  & 32,190   & 50    & 7376     & 29,488   & 2,702    & \textcolor{red}{0.916} \\
+%Dengue partial (DP)     & 20,973   & 50    & 10370    & 17,276   & 3,697    & \textcolor{red}{0.824} \\
+%\end{tabular}
+\normalsize
+\begin{tabular}{l|r|r|r|r}
+                        &         &         &         & \textcolor{red}{fraction} \\
+ dataset                & \# seqs & \# pass & \# fail & \textcolor{red}{pass} \\ \hline
+Norovirus complete  & 1,384   & 1,157    & 227     & \textcolor{red}{0.836} \\
+Dengue complete     & 4,580   & 4,171    & 409     & \textcolor{red}{0.911} \\
+& & & & \\
+Norovirus partial   & 32,190  & 29,488   & 2,702    & \textcolor{red}{0.916} \\
+Dengue partial      & 20,973  & 17,276   & 3,697    & \textcolor{red}{0.824} \\
 \end{tabular}
 
 \end{center}
@@ -660,6 +683,236 @@ Dengue partial (DP)     & 20,973   & 50    & 10370    & 17,276   & 3,697    & \t
 \vfill
 \end{slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\begin{center}
+\includegraphics[width=10.5in]{figs/vadr-paper-title}
+\end{center}
+
+\small
+\begin{itemize}
+\item compared VADR to VAPiD and VIGOR programs on Norovirus and
+  Dengue virus
+\item VADR caught all the problems detected by VAPiD and VIGOR plus
+  additional problems
+\item 2809 of 3143 norovirus sequences (89\%) tested with VADR passed (could foosh)
+\item 1602 of 1702 Dengue sequences (94\%) tested with VADR passed
+  (could foosh)
+\end{itemize}  
+  
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\begin{center}
+\textbf{Limitations}
+\end{center}
+
+\small
+\begin{itemize}
+\item nucleotide space, not protein space
+\item RefSeq or alignment must be 'representative'
+  \begin{itemize}
+    \item divergent sequences, regions, introns, gene order are problematic
+  \end{itemize}
+\end{itemize}
+
+\vfill
+\end{slide}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\begin{center}
+\textbf{Limitations}
+\end{center}
+
+\small
+\begin{itemize}
+\item nucleotide space, not protein space
+\item RefSeq or alignment must be 'representative'
+  \begin{itemize}
+    \item divergent sequences, regions, introns, gene order are problematic
+  \end{itemize}
+\item current length limit of model is about 20Kb due to CM alignment memory
+  requirements
+\item slow
+  \begin{itemize}
+  \item Norovirus complete: 30 seconds/sequence (8X/6X slower than
+    VAPiD/VIGOR)
+  \item Dengue complete: 90 seconds/sequence (20X slower than VAPiD)
+  \item Norovirus partial: 1.5 seconds/sequence (1.5X slower than VIGOR)
+  \item Dengue partial: 9 seconds/sequence
+  \end{itemize}
+\end{itemize}
+
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\begin{center}
+\textbf{Limitations}
+\end{center}
+
+\small
+\begin{itemize}
+\item nucleotide space, not protein space
+\item RefSeq or alignment must be 'representative'
+  \begin{itemize}
+    \item divergent sequences, regions, introns, gene order are problematic
+  \end{itemize}
+\item current length limit of model is about 20Kb due to CM alignment memory
+  requirements
+\item slow
+  \begin{itemize}
+  \item Norovirus complete: 30 seconds/sequence (8X/6X slower than
+    VAPiD/VIGOR)
+    % 1.5K NC
+  \item Dengue complete: 90 seconds/sequence (20X slower than VAPiD)
+    % 4.5K DC
+  \item Norovirus partial: 1.5 seconds/sequence (1.5X slower than VIGOR)
+    % 32K NP
+  \item Dengue partial: 9 seconds/sequence
+    % 21K DP
+    % Noro:   1.5*30+32*1.5=93K seconds = 25 CPU hours
+    % Dengue: 4.5*90+21*9= 594K seconds = 165 CPU hours
+    % 190 hours / 8 cores = 24 hours on
+  \end{itemize}
+\item 190 CPU hours for all Norovirus and Dengue seqs (1 day on
+8 core machine)
+\end{itemize}
+
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\begin{center}
+\textbf{VADR was designed to be flexible}
+\end{center}
+
+\small
+\begin{itemize}
+\item Any conserved sequence region $<$ 20Kb can be modeled 
+\item VADR models are more powerful if built from \textcolor{red}{\emph{alignments}} (profiles)
+\item Currently in testing for COX1: 
+  \begin{itemize}
+  \item Started with 9000 vetted COX1 protein sequences (Susan Schafer)
+  \item Split based on taxonomy and aligned with MUSCLE
+  \item Derived 43 \textcolor{red}{\emph{alignment-based}} models (e.g. \emph{Porifera}, \emph{Amphibia}) covering 5 genetic codes
+  \item Classification stage compares against 43 models
+  \item Protein validation stage compares against 9000 proteins
+  \end{itemize}
+%\item Goal: extend to other viruses and marker genes; building reference
+%  sets and alignments is limiting
+\end{itemize}
+
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\begin{center}
+\textbf{Future directions}
+\end{center}
+
+\small
+\begin{itemize}
+\item alignment-based models for viruses (testing with HCV)
+\item profile-based protein validation to replace BLASTX
+%\item allow scanning of large sequences (e.g. genomes)
+\item extend to more viruses and genes, including ribosomal RNAs and possibly ITS
+  sequences 
+\end{itemize}
+
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+
+\large
+\begin{center}
+\large{\textbf{Acknowledgements}} \\
+
+\normalsize
+\vspace{0.75in}
+
+\small
+\begin{tabular}{l|l|l}
+%                  & \\ \hline
+%                  & \\
+\textbf{NCBI - viral annotation} & \textbf{NCBI - leadership} &  \textbf{HMMER} \\
+Alejandro Sch\"{a}ffer           & David Landsman             & Sean Eddy \\
+Rodney Brister                   & Kim Pruitt                 & Travis Wheeler \\
+Ilene Mizrachi                   & Jim Ostell                 & \\
+Eneida Hatcher                   & David Lipman               & \\
+Linda Yankie                     &                            & \\
+Vincent Calhoun                  & \textbf{NLM - leadership}  & \\
+Alex Kotliarov                   & Patti Brennan              & \\
+Susan Schafer                    & Jerry Sheehan              & \\
+Lara Shonkwiler                  & & \\
+Sophia Hu                        & & \\
+\end{tabular}
+
+\includegraphics[width=2.5in]{figs/NIH_NLM_ABRV_2C_4-white}
+\includegraphics[width=2.5in]{figs/ncbi-logo}
+
+\end{center}
+
+\vfill
+\end{slide}
+
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\begin{center}
+\textbf{Sequence submissions are handled by expert NCBI indexers}
+\end{center}
+
+\small
+\begin{itemize}
+\item Indexers check submissions for quality
+\item Many submissions are of \emph{marker genes}, used to
+  characterize environments (microbiome, soil), which are
+  automatically analyzed by BLAST or specialized tools.
+%\item Submissions with zero errors automatically enter database
+%  (``foosh'')
+%\item Submissions with errors can be corrected by submitter or are manually reviewed by an indexer
+\end{itemize}
+
+\medskip
+
+\begin{center}
+\begin{tabular}{l||r|r||r||l}
+                                 &    2018  & total     &         &           \\
+ marker gene/                    &  GenBank & GenBank   &  TLS\footnote{TLS: Targeted Locus Study, currently only 16S submissions with $>=$ 2500 seqs}      & analysis  \\
+ sequence type                   &  \# seqs & \# seqs   & \# seqs & tool \\ \hline
+& & & \\                    
+%\textcolor{red}{16S rRNA}        & \textcolor{red}{333,121}  & \textcolor{red}{8,015,297} & \textcolor{red}{18,262,402} & \textcolor{red}{BLAST}\footnote{TLS submissions now processed with Ribosensor} \\
+%16S rRNA                        & 333,121  & 8,015,297 & 18,262,402 & BLAST$^{*}$ \\
+16S rRNA                        & 333,121  & 8,015,297 & 18,262,402 & BLAST \\
+& & & \\                    
+ 23S rRNA                        & 74,287  &   275,014  & 2,140      & BLAST \\
+& & & \\
+ ITS1                            & 27,279  &   359,380  & 13,294     & BLAST \\
+& & & \\                    
+ ITS2                            & 24,144  &   184,515  &      0     & BLAST \\
+& & & \\                    
+ ITS1+ITS2                       & 26,734  &   445,721  & 25,725     & BLAST \\
+& & & \\                    
+ Influenza A                     & 74,868  &   665,464  &      0     & FLAN \\
+\end{tabular}
+\end{center}
+\vfill
+\tiny \flushleft{$\dagger$ TLS: Targeted Locus Study, currently only 16S submissions with $>=$ 2500 seqs, handled by Anji Johnston}
+%\tiny \flushleft{$\ddagger$ TLS submissions now processed with ribosensor}
+\end{slide}
+
 \begin{slide}
 \begin{center}
 \includegraphics[width=10.5in]{figs/ss-vapid-title}
@@ -849,209 +1102,3 @@ Dengue partial (DP)     & 20,973   & 50    & 10370    & 17,276   & 3,697    & \t
 \vfill
 \end{slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{slide}
-\begin{center}
-\textbf{VADR is general}
-\end{center}
-
-\small
-\begin{itemize}
-\item Now testing on COX1 (cytochrome C oxidase subunit I) sequences
-\item Models:
-  \begin{itemize}
-  \item Started with 9000 vetted COX1 protein sequences
-  \item Split based on taxonomy and aligned with MUSCLE
-  \item Derived 43 \textcolor{red}{\emph{alignment-based}} models (e.g. porifera, amphibia) covering 5 genetic codes
-  \item Classification stage compares against 43 models
-  \item Protein validation stage compares against 9000 proteins
-  \end{itemize}
-\item Goal: extend to other marker genes; building reference
-  sets and alignments is limiting
-\end{itemize}
-
-\vfill
-\end{slide}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{slide}
-\begin{center}
-\textbf{Limitations}
-\end{center}
-
-\small
-\begin{itemize}
-\item nucleotide space, not protein space
-\item RefSeq or alignment must be 'representative'
-  \begin{itemize}
-    \item divergent sequences, regions, introns, gene order are problematic
-  \end{itemize}
-\end{itemize}
-
-\vfill
-\end{slide}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{slide}
-\begin{center}
-\textbf{Limitations}
-\end{center}
-
-\small
-\begin{itemize}
-\item nucleotide space, not protein space
-\item RefSeq or alignment must be 'representative'
-  \begin{itemize}
-    \item divergent sequences, regions, introns, gene order are problematic
-  \end{itemize}
-\item current length limit of model is about 20Kb due to CM alignment memory
-  requirements
-\item slow
-  \begin{itemize}
-  \item Norovirus complete: 30 seconds/sequence (8X/6X slower than
-    VAPiD/VIGOR)
-  \item Dengue complete: 90 seconds/sequence (20X slower than VAPiD)
-  \item Norovirus partial: 1.5 seconds/sequence (1.5X slower than VIGOR)
-  \item Dengue partial: 9 seconds/sequence
-  \end{itemize}
-\end{itemize}
-
-\vfill
-\end{slide}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{slide}
-\begin{center}
-\textbf{Limitations}
-\end{center}
-
-\small
-\begin{itemize}
-\item nucleotide space, not protein space
-\item RefSeq or alignment must be 'representative',
-  \begin{itemize}
-    \item divergent sequences, regions, introns, gene order are problematic
-  \end{itemize}
-\item current length limit of model is about 20Kb due to CM alignment memory
-  requirements
-\item slow
-  \begin{itemize}
-  \item Norovirus complete: 30 seconds/sequence (8X/6X slower than
-    VAPiD/VIGOR)
-    % 1.5K NC
-  \item Dengue complete: 90 seconds/sequence (20X slower than VAPiD)
-    % 4.5K DC
-  \item Norovirus partial: 1.5 seconds/sequence (1.5X slower than VIGOR)
-    % 32K NP
-  \item Dengue partial: 9 seconds/sequence
-    % 21K DP
-    % Noro:   1.5*30+32*1.5=93K seconds = 25 CPU hours
-    % Dengue: 4.5*90+21*9= 594K seconds = 165 CPU hours
-    % 190 hours / 8 cores = 24 hours on
-  \end{itemize}
-\item 190 CPU hours for all Norovirus and Dengue seqs (1 day on
-8 core machine)
-\end{itemize}
-
-\vfill
-\end{slide}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{slide}
-\begin{center}
-\textbf{Future directions}
-\end{center}
-
-\small
-\begin{itemize}
-\item alignment-based models for viruses (testing with HCV)
-\item profile-based protein validation to replace BLASTX
-\item allow scanning of large sequences (e.g. genomes)
-\item extend to more genes, including ribosomal RNAs and possible ITS
-  sequences 
-\end{itemize}
-
-\vfill
-\end{slide}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{slide}
-
-\large
-\begin{center}
-\large{\textbf{Acknowledgements}} \\
-
-\normalsize
-\vspace{0.75in}
-
-\small
-\begin{tabular}{l|l|l}
-%                  & \\ \hline
-%                  & \\
-\textbf{NCBI - viral annotation} & \textbf{NCBI - leadership} &  \textbf{HMMER} \\
-Alejandro Sch\"{a}ffer           & David Landsman             & Sean Eddy \\
-Rodney Brister                   & Kim Pruitt                 & Travis Wheeler \\
-Ilene Mizrachi                   & Jim Ostell                 & \\
-Eneida Hatcher                   & David Lipman               & \\
-Linda Yankie                     &                            & \\
-Vincent Calhoun                  & \textbf{NLM - leadership}  & \\
-Alex Kotliarov                   & Patti Brennan              & \\
-Susan Schafer                    & Jerry Sheehan              & \\
-Lara Shonkwiler                  & & \\
-Sophia Hu                        & & \\
-\end{tabular}
-
-\includegraphics[width=2.5in]{figs/NIH_NLM_ABRV_2C_4-white}
-\includegraphics[width=2.5in]{figs/ncbi-logo}
-
-\end{center}
-
-\vfill
-\end{slide}
-
-
-\end{document}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{slide}
-\begin{center}
-\textbf{Sequence submissions are handled by expert NCBI indexers}
-\end{center}
-
-\small
-\begin{itemize}
-\item Indexers check submissions for quality
-\item Many submissions are of \emph{marker genes}, used to
-  characterize environments (microbiome, soil), which are
-  automatically analyzed by BLAST or specialized tools.
-%\item Submissions with zero errors automatically enter database
-%  (``foosh'')
-%\item Submissions with errors can be corrected by submitter or are manually reviewed by an indexer
-\end{itemize}
-
-\medskip
-
-\begin{center}
-\begin{tabular}{l||r|r||r||l}
-                                 &    2018  & total     &         &           \\
- marker gene/                    &  GenBank & GenBank   &  TLS\footnote{TLS: Targeted Locus Study, currently only 16S submissions with $>=$ 2500 seqs}      & analysis  \\
- sequence type                   &  \# seqs & \# seqs   & \# seqs & tool \\ \hline
-& & & \\                    
-%\textcolor{red}{16S rRNA}        & \textcolor{red}{333,121}  & \textcolor{red}{8,015,297} & \textcolor{red}{18,262,402} & \textcolor{red}{BLAST}\footnote{TLS submissions now processed with Ribosensor} \\
-%16S rRNA                        & 333,121  & 8,015,297 & 18,262,402 & BLAST$^{*}$ \\
-16S rRNA                        & 333,121  & 8,015,297 & 18,262,402 & BLAST \\
-& & & \\                    
- 23S rRNA                        & 74,287  &   275,014  & 2,140      & BLAST \\
-& & & \\
- ITS1                            & 27,279  &   359,380  & 13,294     & BLAST \\
-& & & \\                    
- ITS2                            & 24,144  &   184,515  &      0     & BLAST \\
-& & & \\                    
- ITS1+ITS2                       & 26,734  &   445,721  & 25,725     & BLAST \\
-& & & \\                    
- Influenza A                     & 74,868  &   665,464  &      0     & FLAN \\
-\end{tabular}
-\end{center}
-\vfill
-\tiny \flushleft{$\dagger$ TLS: Targeted Locus Study, currently only 16S submissions with $>=$ 2500 seqs, handled by Anji Johnston}
-%\tiny \flushleft{$\ddagger$ TLS submissions now processed with ribosensor}
-\end{slide}
